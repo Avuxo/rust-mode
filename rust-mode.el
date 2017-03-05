@@ -2,7 +2,7 @@
 
 
 ;;keywords
-(setq rust-keywords '("enum" "mut" "use" "super" "pub" "struct" "impl" "if" "let" "loop" "while" "for"))
+(setq rust-keywords '("enum" "mut" "use" "super" "pub" "struct" "impl" "if" "let" "loop" "while" "for" "extern" "crate"))
 (setq rust-types '("i8" "i16" "i32" "i64" "u8" "u16" "u32" "u64" "f32" "f64" "char" "bool") )
 (setq rust-functions '("fn"))
 
