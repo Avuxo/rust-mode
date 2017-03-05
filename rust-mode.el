@@ -2,7 +2,7 @@
 
 
 ;;keywords
-(setq rust-keywords '("enum" "mut" "use" "super" "pub" "struct" "impl" "if" "let") )
+(setq rust-keywords '("enum" "mut" "use" "super" "pub" "struct" "impl" "if" "let" "loop" "while" "for"))
 (setq rust-types '("i8" "i16" "i32" "i64" "u8" "u16" "u32" "u64" "f32" "f64" "char" "bool") )
 (setq rust-functions '("fn"))
 
@@ -16,9 +16,8 @@
       `(
         (,rust-keywords-regexp . font-lock-keyword-face)
         (,rust-types-regexp . font-lock-type-face)
-        (,rust-functions-regexp . font-lock-functions-name-face)
+        (,rust-functions-regexp . font-lock-function-name-face)
         ))
-
 
 (define-derived-mode rust-mode c-mode "rust mode"
   "Major mode for the Rust language"
